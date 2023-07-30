@@ -96,24 +96,6 @@ Topics :
 9]  functions (with/without parameters and with/without return)
 10]  lists
 11]  Dictionary
-12]  .
-13]  .
-14]  .
-15]  .
-16]  .
-17]  .
-18]  .
-19]  .
-20]  .
-21]  .
-22]  .
-23]  .
-24]  .
-25]  .
-26]  .
-27]  .
-28]  .
-29]  .
 
 <<:: EXERCISES ::>>
  =================
