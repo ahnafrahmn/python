@@ -95,8 +95,6 @@ Topics :
 8]  using loops and nested loops
 9]  functions (with/without parameters and with/without return)
 10]  lists
-
-            
 11]  Dictionary
 12]  .
 13]  .
