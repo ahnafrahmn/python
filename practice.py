@@ -95,7 +95,13 @@ Topics :
 8]  using loops and nested loops
 9]  functions (with/without parameters and with/without return)
 10]  lists
+
+            
 11]  Dictionary
+12]  Comments 
+13]  Class and Objects
+14]  Constructors
+15]  Packages
 
 <<:: EXERCISES ::>>
  =================
@@ -113,14 +119,15 @@ Topics :
             for example (prime, spy, perfect, composite, even, odd, palindrome, sunny ).
         12. Write a programs with a list  for given operations 
             (searching, sorting, minimum, maximum, frequency, storing, deleting).
+        13. Create class human and give it abilities (take name with constructor)
+        14. Create class human, give it abilities and inherit gender wise
 
             
             
-========================================================================================================================
-========================================================================================================================
-========================================================================================================================
+=================================================================================================================================================
+=================================================================================================================================================
 
-                                  <<<<<  Practice >>>>>
+                                       <<<<<::||  Practice ||::>>>>>
 
 
 
@@ -388,8 +395,82 @@ nums = [5, 23, 31, 1, 90, 21, 76]
 print(f"Given list : {nums} \nThe maximum value is : {maximum(nums)}")
 
 
-==============================================================================================================
+#Topic-13 >>>>>>>>>>
+
+class Person:  # class name is Person
+    def __init__(self):
+        self.name = input("Enter your name : ")
+    def talk(self):
+        print(f"{self.name} is Taliking!!")
+
+
+#creating object :
+
+object1 = Person()
+object1.talk()
+
+----------------------------------------------------------
+
+#Topic-14 >>>>>>>>>>
+
+class Person:  # class name is Person
+    def __init__(self, name):
+        self.name = name
+    def talk(self):
+        print(f"{self.name} is Taliking!!")
+
+
+#creating object :
+
+object1 = Person("Ahnaf") # giving a name as a parameter to constructor
+object1.talk()
+------------------------------------------------------------------------------
+#Topic-14 >>>>>>>>>>
+
+import random as ran    # importing 'random' package
+
+class Dice:
+    def roll(self):
+        print(ran.randint(1, 6))
+
+
+obj = Dice()
+obj.roll()
+
+
+-------------------------------------------------------------------------------------------------
+
+
+# Function to take input of password & hiding every character while taking input
+import msvcrt, time
+def take_password():
+    password = ""
+    c = b""
+    while c != b'\r':
+        if password:
+            time.sleep(0.13)
+            print("\b*", end='')
+        c = msvcrt.getch()
+        while c == b'\x08':
+            print("\b \b", end='')
+            c = msvcrt.getch()
+        print(c.decode(), end='')
+        password += c.decode()
+    print()
+    return password
+
+
+
+===========================================================================================================================================
+===========================================================================================================================================
 """
+
+
+
+
+
+
+
 
 
 
